@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   GatewayApi:
-    image: ihda_back/${IMAGE_BRANCH:-master}:gatewayapi
+    image: planeta_back/${IMAGE_BRANCH:-master}:gatewayapi
     build:
       context: .
       dockerfile: WebApis/GatewayApi/Dockerfile
@@ -20,7 +20,7 @@ services:
     restart: always
 
   AuthApi:
-    image: ihda_back/${IMAGE_BRANCH:-master}:authapi
+    image: planeta_back/${IMAGE_BRANCH:-master}:authapi
     build:
       context: .
       dockerfile: WebApis/AuthApi/Dockerfile
@@ -38,7 +38,7 @@ services:
     restart: always
 
   AssetApi:
-    image: ihda_back/${IMAGE_BRANCH:-master}:assetapi
+    image: planeta_back/${IMAGE_BRANCH:-master}:assetapi
     build:
       context: .
       dockerfile: WebApis/AssetApi/Dockerfile
@@ -57,7 +57,7 @@ services:
     restart: always
 
   ReferenceBookApi:
-    image: ihda_back/${IMAGE_BRANCH:-master}:referencebookapi
+    image: planeta_back/${IMAGE_BRANCH:-master}:referencebookapi
     build:
       context: .
       dockerfile: WebApis/ReferenceBookApi/Dockerfile
