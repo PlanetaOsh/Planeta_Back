@@ -74,6 +74,24 @@ services:
       - "${REFERENCEBOOK_PORT}:5003"
     restart: always
 
+  MarketApi:
+    image: planeta_back/${IMAGE_BRANCH:-master}:marketapi
+    build:
+      context: .
+      dockerfile: WebApis/MarketApi/Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=${ASPNETCORE_ENVIRONMENT}
+      - EXTERNAL_CONFIG_PATH=${EXTERNAL_CONFIG_PATH}
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/etc/timezone:/etc/timezone:ro"
+      - "${LOG_PATH}/market:/app/logs"
+      - "${EXTERNAL_CONFIG_PATH}:${EXTERNAL_CONFIG_PATH}"
+      - ./Domain/WebCore/GeneralSettings.json:/app/Domain/WebCore/GeneralSettings.json:ro
+    ports:
+      - "${MARKET_PORT}:5004"
+    restart: always
+
   RedisCache:
     image: redis:6.2-alpine
     restart: always
