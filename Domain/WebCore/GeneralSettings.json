@@ -1,0 +1,30 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnectionString": "host=postgres;port=5432;database=planeta_db;Username=postgres;password=1234",
+    "SymmetricKey": "<planeta_back_nimadur_symetrickey_yashirin_suz>"
+  },
+  "JwtOption": {
+    "Issuer": "<planeta_back_nimadurlar>",
+    "Audience": "planeta_back_nimadurlar",
+    "SecretKey": "planeta_back_nimadurlarplaneta_back_nimadurlarplaneta_back_nimadurlarplaneta_back_nimadurlar",
+    "ExpirationInMinutes": 60,
+    "ExpirationRefreshTokenInMinutes": 180
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "TelegramBotCredential": {
+    "Domain": "https://api.telegram.org",
+    "Token": "<token>",
+    "ChatId": "<chat id>"
+  },
+  "Swagger": {
+    "Docs": [
+      "Client",
+      "Admin"
+    ]
+  }
+}
