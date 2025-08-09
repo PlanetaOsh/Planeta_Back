@@ -29,6 +29,7 @@
     <projectFile profileName="IIS Express">WebApis/GatewayApi/GatewayApi.csproj</projectFile>
     <projectFile profileName="http">WebApis/GatewayApi/GatewayApi.csproj</projectFile>
     <projectFile profileName="https">WebApis/GatewayApi/GatewayApi.csproj</projectFile>
+    <projectFile kind="Docker">WebApis/MarketApi/MarketApi.csproj</projectFile>
     <projectFile kind="Docker">WebApis/MosqueApi/MosqueApi.csproj</projectFile>
     <projectFile profileName="IIS Express">WebApis/MosqueApi/MosqueApi.csproj</projectFile>
     <projectFile profileName="http">WebApis/MosqueApi/MosqueApi.csproj</projectFile>
@@ -51,18 +52,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93519b8e-3fe5-46d8-88ad-e598509b2a97" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WebApi/MarketApi/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/MarketApi/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/MarketApi/MarketApi.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/MarketApi/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/MarketApi/Properties/launchSettings.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/MarketApi/appsettings.Development.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WebApi/MarketApi/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/dotnet.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/dotnet.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Ihda/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Ihda/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Planeta.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Planeta.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/MarketApi/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/WebApis/MarketApi/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/MarketApi/Extensions/ServiceCollectionExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApis/MarketApi/Extensions/ServiceCollectionExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/MarketApi/MarketApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApis/MarketApi/MarketApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/MarketApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WebApis/MarketApi/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/MarketApi/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApis/MarketApi/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/MarketApi/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApis/MarketApi/appsettings.Development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApi/MarketApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/WebApis/MarketApi/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebApis/AuthApi/AuthApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WebApis/AuthApi/AuthApi.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,6 +224,29 @@
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/Infrastructures/DatabaseBroker/DatabaseBroker.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="MarketApi" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/WebApis/MarketApi/MarketApi.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
@@ -788,6 +809,17 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="MarketApi/Dockerfile (1)" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="marketapi" />
+          <option name="contextFolderPath" value="C:\Users\z_zayniddinov\RiderProjects\Planeta_Back" />
+          <option name="sourceFilePath" value="WebApis/MarketApi/Dockerfile" />
+        </settings>
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="MarketApi/Dockerfile" type="docker-deploy" factoryName="dockerfile" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
@@ -868,7 +900,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1754744699340</updated>
-      <workItem from="1754744700426" duration="1699000" />
+      <workItem from="1754744700426" duration="2251000" />
     </task>
     <task id="LOCAL-00001" summary="Init planeta">
       <option name="closed" value="true" />
@@ -894,7 +926,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754745583339</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added MarketApi.csproj">
+      <option name="closed" value="true" />
+      <created>1754746515119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1754746515119</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -907,7 +947,8 @@
     <MESSAGE value="Init planeta" />
     <MESSAGE value="fix name" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="Added MarketApi.csproj" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added MarketApi.csproj" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
